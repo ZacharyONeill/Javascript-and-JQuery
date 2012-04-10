@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="utf-8" />
+	<title>Pick an Instrument!</title>
+	<script src="dataz.js" type="text/javascript" charset="utf-8"></script>
+	<script src="cookies.js" type="text/javascript" charset="utf-8"></script>
+	<script src="functionList.js" type="text/javascript" charset="utf-8"></script>
+	
+	<script type="text/javascript">
+	var ie7 = false;
+	</script>
+	<!--[if lt IE 8]>
+	<script type="text/javascript">
+	var ie7=true;
+	</script>
+	<![endif]-->
+	<script type="text/javascript">
+	if(ie7 || !(document.getElementById) || (navigator.appVersion.indexOf("Mac") != -1 && document.all)){
+		
+		window.location = ('redirect.html');
+	}
+	
+	
+
+</script>
+<style type="text/css">
+	
+		body {
+			width: 100%;
+			height: 100%;
+			position: absolute;
+			background-color: #FFC;
+	
+		}
+
+		.frame {
+			
+			background-color: #FAA;
+			border: 2px solid red;
+		}
+		div#left{
+			position: relative;
+			height: 80%;
+			width: 49%;
+			
+		}
+		div#right{
+			position: relative;
+			height: 80%;
+			width: 49%;
+			float: right;
+		}
+	
+		select {
+		
+			border: 1px thin green;
+		}
+
+</style>
+
+
+</head>
+<body onload="init()">
+	<div id='right'class='frame'>
+	<h2>Your Band!</h2>
+	
+	
+	</div>
+	<div id='left' class='frame'>
+		<form id='questionForm' >
+	
+        
+		</form>
+		<br>
+		<br>
+		<br>
+		<form id='subForm' onsubmit='theSubmit()'>
+	
+		</form>
+	</div> 
+	
+</body>
+</html>
